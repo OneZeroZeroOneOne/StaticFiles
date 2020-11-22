@@ -8,6 +8,7 @@
                 password: loginData.pass
             },
             success: function(data) {
+                console.log(data.token);
                 success && success(data.token);
             },
             error: function(jqXhr, err, msg) {
